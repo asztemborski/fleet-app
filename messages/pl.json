@@ -1,0 +1,17 @@
+{
+  "LandingPage": {
+    "welcomeSection_header": "Zarządzaj projektami z łatwością",
+    "welcomeSection_description": "Usprawnij zarządzanie projektami dzięki naszej aplikacji - potężnemu narzędziu do organizowania zadań, śledzenia postępów i usprawniania współpracy w zespole.",
+    "descriptionSection_header": "Efektywne zarządzanie projektami",
+    "descriptionSection_description": "Nasza aplikacja zapewnia wydajne rozwiązania do zarządzania projektami, umożliwiając bezproblemową współpracę i efektywną komunikację. Umożliwia zespołom realizację projektów na czas i w ramach budżetu",
+    "statisticsSection_projectsCreated": "Utworzonych projektów",
+    "statisticsSection_applicationMembers": "Członków",
+    "statisticsSection_tasksAssigned": "Przypisanych zadań",
+    "statisticsSection_pageVisitors": "Odwiedzających",
+    "footer_title": "Zacznij zarządać projektami już dziś",
+    "signIn": "Zaloguj się",
+    "getStarted": "Zacznij teraz",
+    "about": "O aplikacji",
+    "contact": "Kontakt"
+  }
+}
