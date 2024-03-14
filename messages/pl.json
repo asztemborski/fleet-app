@@ -13,5 +13,32 @@
     "getStarted": "Zacznij teraz",
     "about": "O aplikacji",
     "contact": "Kontakt"
+  },
+  "InputErrorMessages": {
+    "required": "To pole jest wymagane",
+    "min_length": "To pole wymaga {number} znaków",
+    "password_match": "Hasła się nie zgadzają",
+    "invalid_email": "Niepoprawny adres email"
+  },
+  "SignUpPage": {
+    "back": "Wstecz",
+    "sign_up": "Zarejestruj się",
+    "description": "Dołącz do naszej platformy, aby zacząć",
+    "agreements": "Klikając dalej akceptujesz nasze",
+    "terms_and_policy": "warunki oraz polityke prywatności",
+    "account_exists": "Posiadasz już konto?",
+    "log_in": "Zaloguj się"
+  },
+  "SignUpForm": {
+    "first_name_label": "Imie",
+    "first_name_placeholder": "Podaj swoje imię",
+    "last_name_label": "Nazwisko",
+    "last_name_placeholder": "Podaj swoje nazwisko",
+    "email_label": "Email",
+    "email_placeholder": "Podaj swój adres email",
+    "password_label": "Hasło",
+    "password_placeholder": "Podaj swoje hasło",
+    "confirm_password_label": "Powtóz hasło",
+    "confirm_password_placeholder": "Powtórz swoje hasło"
   }
 }

@@ -4,4 +4,6 @@ export const LANDING_PAGE_MESSAGES = "LandingPage";
 export const ABOUT_PAGE_MESSAGES = "AboutPage";
 export const CONTACT_PAGE_MESSAGES = "ContactPage";
 export const LOGIN_PAGE_MESSAGES = "";
-export const SIGNUP_PAGE_MESSAGES = "";
+export const SIGNUP_PAGE_MESSAGES = "SignUpPage";
+export const INPUT_ERROR_MESSAGES = "InputErrorMessages";
+export const SIGNUP_FORM_MESSAGES = "SignUpForm";

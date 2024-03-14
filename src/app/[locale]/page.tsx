@@ -1,50 +1,52 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link } from "@/utilities/navigation";
 
-import BaseButton from "@/components/Buttons/BaseButton";
+import Button from "@/components/Button";
 import StatisticCard from "@/components/StatisticCard";
-
 import { LANDING_PAGE_MESSAGES } from "@/constants/translations";
-import styles from "./LandingPage.module.scss";
+import { Link } from "@/utilities/navigation";
 
 export default function LandingPage() {
   const t = useTranslations(LANDING_PAGE_MESSAGES);
 
   return (
-    <main className={styles.MainContainer}>
-      <section className={styles.WelcomeSection}>
-        <header className={styles.HeaderContainer}>
-          <nav className={styles.NavBar}>
-            <Link className={styles.Link} href="/">
+    <main className="relative w-full h-screen overflow-y-auto overscroll-y-contain snap-y snap-mandatory no-scrollbar">
+      <section className="relative h-screen snap-center py-10 px-32 min-w-min">
+        <header className="flex flex-row w-full justify-between items-center mb-20">
+          <nav className="flex flex-row space-x-5">
+            <Link className="text-white" href="/">
               Fleet
             </Link>
-            <Link className={styles.Link} href="/about">
+            <Link className="text-white" href="/about">
               {t("about")}
             </Link>
-            <Link className={styles.Link} href="/contact">
+            <Link className="text-white" href="/contact">
               {t("contact")}
             </Link>
           </nav>
           <Link href="/sign-in">
-            <BaseButton>
-              <span className={styles.ButtonText}>{t("signIn")}</span>
-            </BaseButton>
+            <Button
+              className="font-bold tracking-widest px-6 py-6 rounded-[5px] text-lg border"
+              variant="secondary"
+            >
+              {t("signIn")}
+            </Button>
           </Link>
         </header>
-        <div className={styles.WelcomeSectionContainer}>
-          <div className={styles.TextContainer}>
-            <h1 className={styles.WelcomeSectionHeader}>
-              {t("welcomeSection_header")}
-            </h1>
-            <p className={styles.WelcomeSectionText}>
+        <div className="flex flex-row items-center justify-center px-10 space-x-4">
+          <div className="w-full flex flex-col space-y-14 ">
+            <h1 className="text-6xl font-bold">{t("welcomeSection_header")}</h1>
+            <p className="text-xl font-medium">
               {t("welcomeSection_description")}
             </p>
-            <div className={styles.WelcomeSectionButtonContainer}>
+            <div className="w-1/2">
               <Link href="/sign-up">
-                <BaseButton>
-                  <span className={styles.ButtonText}>{t("getStarted")}</span>
-                </BaseButton>
+                <Button
+                  variant="secondary"
+                  className="py-8 px-28 text-2xl rounded-[5px] font-extrabold tracking-wider border"
+                >
+                  {t("getStarted")}
+                </Button>
               </Link>
             </div>
           </div>
@@ -53,27 +55,29 @@ export default function LandingPage() {
             alt=""
             width="500"
             height="500"
+            className="hidden lg:block"
           />
         </div>
       </section>
-      <section className={styles.DescriptionSection}>
+      <section className="bg-black landing-section h-screen flex flex-row space-x-10 snap-center">
         <Image
           src="/images/welcome-section-image.svg"
           alt=""
           width="500"
           height="500"
+          className="hidden lg:block"
         />
-        <div className={styles.TextContainer}>
-          <h2 className={styles.DescriptionSectionHeader}>
+        <div className="w-1/2 flex flex-col space-y-14">
+          <h2 className="text-6xl font-bold">
             {t("descriptionSection_header")}
           </h2>
-          <p className={styles.DescriptionSectionText}>
+          <p className="text-xl font-medium">
             {t("descriptionSection_description")}
           </p>
         </div>
       </section>
-      <section className={styles.StatisticsSection}>
-        <div className={styles.StatisticsContainer}>
+      <section className="landing-section snap-center ">
+        <div className="landing-section flex flex-row m-0  justify-between h-[60vh]">
           <StatisticCard
             header={t("statisticsSection_projectsCreated")}
             value="102 Projects"
@@ -91,8 +95,8 @@ export default function LandingPage() {
             value="700 Visitors"
           />
         </div>
-        <footer className={styles.Footer}>
-          <h3 className={styles.FooterHeader}>{t("footer_title")}</h3>
+        <footer className="landing-section h-[40vh] bg-black">
+          <h3 className="text-4xl font-semibold">{t("footer_title")}</h3>
         </footer>
       </section>
     </main>

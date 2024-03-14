@@ -13,5 +13,32 @@
     "getStarted": "Get started",
     "about": "About",
     "contact": "Contact"
+  },
+  "InputErrorMessages": {
+    "required": "This field is required",
+    "min_length": "This field must contains at least {number} characters",
+    "password_match": "Passwords do not match",
+    "invalid_email": "Invalid email address"
+  },
+  "SignUpPage": {
+    "back": "Back",
+    "sign_up": "Sign Up",
+    "description": "Join our platform to get started",
+    "agreements": "By signing up, you agree to our",
+    "terms_and_policy": "Terms and Privacy Policy",
+    "account_exists": "Already have an account?",
+    "log_in": "Log in"
+  },
+  "SignUpForm": {
+    "first_name_label": "First name",
+    "first_name_placeholder": "Enter your first name",
+    "last_name_label": "Last name",
+    "last_name_placeholder": "Enter your last name",
+    "email_label": "Email",
+    "email_placeholder": "Enter your email",
+    "password_label": "Password",
+    "password_placeholder": "Enter your password",
+    "confirm_password_label": "Confirm password",
+    "confirm_password_placeholder": "Confirm your password"
   }
 }
