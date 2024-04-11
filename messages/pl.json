@@ -1,44 +1,79 @@
 {
   "LandingPage": {
-    "welcomeSection_header": "Zarządzaj projektami z łatwością",
-    "welcomeSection_description": "Usprawnij zarządzanie projektami dzięki naszej aplikacji - potężnemu narzędziu do organizowania zadań, śledzenia postępów i usprawniania współpracy w zespole.",
-    "descriptionSection_header": "Efektywne zarządzanie projektami",
-    "descriptionSection_description": "Nasza aplikacja zapewnia wydajne rozwiązania do zarządzania projektami, umożliwiając bezproblemową współpracę i efektywną komunikację. Umożliwia zespołom realizację projektów na czas i w ramach budżetu",
-    "statisticsSection_projectsCreated": "Utworzonych projektów",
-    "statisticsSection_applicationMembers": "Członków",
-    "statisticsSection_tasksAssigned": "Przypisanych zadań",
-    "statisticsSection_pageVisitors": "Odwiedzających",
-    "footer_title": "Zacznij zarządać projektami już dziś",
+    "WelcomeSection": {
+      "header": "Zarządzaj projektami z łatwością",
+      "description": "Usprawnij zarządzanie projektami dzięki naszej aplikacji - potężnemu narzędziu do organizacji zadań, śledzenia postępów i poprawy współpracy zespołowej."
+    },
+    "DescriptionSection": {
+      "header": "Efektywne zarządzanie projektami",
+      "description": "Nasza aplikacja zapewnia efektywne rozwiązania zarządzania projektami, umożliwiając bezproblemową współpracę i skuteczną komunikację. Wzmacnia zespoły, aby dostarczały projekty na czas i w ramach budżetu."
+    },
+    "StatisticsSection": {
+      "projectsCreated": "Utworzone projekty",
+      "applicationMembers": "Członkowie aplikacji",
+      "tasksAssigned": "Przypisane zadania",
+      "pageVisitors": "Odwiedzający stronę"
+    },
+    "Footer": {
+      "title": "Zacznij zarządzać projektami już dziś"
+    },
     "signIn": "Zaloguj się",
-    "getStarted": "Zacznij teraz",
-    "about": "O aplikacji",
+    "getStarted": "Rozpocznij",
+    "about": "O nas",
     "contact": "Kontakt"
   },
   "InputErrorMessages": {
     "required": "To pole jest wymagane",
-    "min_length": "To pole wymaga {number} znaków",
-    "password_match": "Hasła się nie zgadzają",
-    "invalid_email": "Niepoprawny adres email"
+    "minLength": "To pole musi zawierać co najmniej {number} znaków",
+    "passwordMatch": "Hasła nie pasują do siebie",
+    "invalidEmail": "Nieprawidłowy adres email"
+  },
+  "ApiErrorMessages": {
+    "Thrive": {
+      "Exception": "Wystąpił błąd podczas obsługi twojego żądania."
+    },
+    "Identity": {
+      "InvalidEmailProvider": "Podany dostawca adresów e-mail nie jest prawidłowym dostawcą adresów e-mail.",
+      "EmailInUse": "Podany adres e-mail jest już używany.",
+      "UsernameInUse": "Podana nazwa użytkownika jest już używana.",
+      "InvalidCredentials": "Nieprawidłowe dane uwierzytelniające."
+    }
   },
   "SignUpPage": {
     "back": "Wstecz",
-    "sign_up": "Zarejestruj się",
-    "description": "Dołącz do naszej platformy, aby zacząć",
-    "agreements": "Klikając dalej akceptujesz nasze",
-    "terms_and_policy": "warunki oraz polityke prywatności",
-    "account_exists": "Posiadasz już konto?",
-    "log_in": "Zaloguj się"
+    "signUp": "Zarejestruj się",
+    "description": "Dołącz do naszej platformy, aby rozpocząć"
   },
   "SignUpForm": {
-    "first_name_label": "Imie",
-    "first_name_placeholder": "Podaj swoje imię",
-    "last_name_label": "Nazwisko",
-    "last_name_placeholder": "Podaj swoje nazwisko",
-    "email_label": "Email",
-    "email_placeholder": "Podaj swój adres email",
-    "password_label": "Hasło",
-    "password_placeholder": "Podaj swoje hasło",
-    "confirm_password_label": "Powtóz hasło",
-    "confirm_password_placeholder": "Powtórz swoje hasło"
+    "email": {
+      "label": "Email",
+      "placeholder": "Wpisz swój adres email"
+    },
+    "username": {
+      "label": "Nazwa użytkownika",
+      "placeholder": "Wpisz swoją nazwę użytkownika"
+    },
+    "password": {
+      "label": "Hasło",
+      "placeholder": "Wpisz swoje hasło"
+    },
+    "confirmPassword": {
+      "label": "Potwierdź hasło",
+      "placeholder": "Potwierdź swoje hasło"
+    },
+    "agreements": "Rejestrując się, zgadzasz się na nasze",
+    "termsAndPolicy": "Warunki i politykę prywatności",
+    "accountExists": "Masz już konto?",
+    "logIn": "Zaloguj się",
+    "signUp": "Zarejestruj się"
+  },
+  "ConfirmEmailAlertDialog": {
+    "title": "Potwierdź swój adres email",
+    "description": " Prosimy zweryfikować swój adres email, aby aktywować swoje konto. Sprawdź swoją skrzynkę odbiorczą w poszukiwaniu wiadomości z linkiem potwierdzającym. Dziękujemy!",
+    "continue": "Kontynuuj"
+  },
+  "ErrorAlertDialog": {
+    "title": "Ups! Coś poszło nie tak!",
+    "continue": "Kontynuuj"
   }
 }

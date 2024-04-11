@@ -13,25 +13,12 @@ type MessagesProviderProps = {
 const MessagesProvider = ({ children, namespaces }: MessagesProviderProps) => {
   const messages = useMessages();
 
-  const flattenedMessages = Object.fromEntries(
-    namespaces.flatMap((namespace) => {
-      const currentNamespace = messages[namespace];
-      if (!currentNamespace) return [];
-
-      return Object.entries(currentNamespace).map(([key, value]) => {
-        if (typeof value === "object" && value !== null) {
-          return Object.entries(value).map(([subKey, subValue]) => [
-            subKey,
-            subValue,
-          ]);
-        }
-        return [key, value];
-      });
-    })
+  const filteredMessages = Object.fromEntries(
+    Object.entries(messages).filter(([key]) => namespaces.includes(key))
   );
 
   return (
-    <NextIntlClientProvider messages={flattenedMessages}>
+    <NextIntlClientProvider messages={filteredMessages}>
       {children}
     </NextIntlClientProvider>
   );

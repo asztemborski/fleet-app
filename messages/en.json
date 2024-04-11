@@ -1,14 +1,22 @@
 {
   "LandingPage": {
-    "welcomeSection_header": "Manage Projects with Ease",
-    "welcomeSection_description": "Streamline your project management with our app - a powerful tool for organizing tasks, tracking progress, and improving teamcollaboration.",
-    "descriptionSection_header": "Efficient Project Management",
-    "descriptionSection_description": "Our app provides efficient project management solutions, enablingseamless collaboration and effective communication. It empowersteams to deliver projects on time and within budget",
-    "statisticsSection_projectsCreated": "Projects created",
-    "statisticsSection_applicationMembers": "Application members",
-    "statisticsSection_tasksAssigned": "Tasks assigned",
-    "statisticsSection_pageVisitors": "Page visitors",
-    "footer_title": "Start managing projects today",
+    "WelcomeSection": {
+      "header": "Manage Projects with Ease",
+      "description": "Streamline your project management with our app - a powerful tool for organizing tasks, tracking progress, and improving teamcollaboration."
+    },
+    "DescriptionSection": {
+      "header": "Efficient Project Management",
+      "description": "Our app provides efficient project management solutions, enablingseamless collaboration and effective communication. It empowersteams to deliver projects on time and within budget"
+    },
+    "StatisticsSection": {
+      "projectsCreated": "Projects created",
+      "applicationMembers": "Application members",
+      "tasksAssigned": "Tasks assigned",
+      "pageVisitors": "Page visitors"
+    },
+    "Footer": {
+      "title": "Start managing projects today"
+    },
     "signIn": "Sign in",
     "getStarted": "Get started",
     "about": "About",
@@ -16,29 +24,56 @@
   },
   "InputErrorMessages": {
     "required": "This field is required",
-    "min_length": "This field must contains at least {number} characters",
-    "password_match": "Passwords do not match",
-    "invalid_email": "Invalid email address"
+    "minLength": "This field must contains at least {number} characters",
+    "passwordMatch": "Passwords do not match",
+    "invalidEmail": "Invalid email address"
+  },
+  "ApiErrorMessages": {
+    "Thrive": {
+      "Exception": "There was an error while handling your request."
+    },
+    "Identity": {
+      "InvalidEmailProvider": "Given email address provider is not a valid email provider.",
+      "EmailInUse": "Given email address is already in use.",
+      "UsernameInUse": "Given username is already in use.",
+      "InvalidCredentials": "Invalid credentials."
+    }
   },
   "SignUpPage": {
     "back": "Back",
-    "sign_up": "Sign Up",
-    "description": "Join our platform to get started",
-    "agreements": "By signing up, you agree to our",
-    "terms_and_policy": "Terms and Privacy Policy",
-    "account_exists": "Already have an account?",
-    "log_in": "Log in"
+    "signUp": "Sign Up",
+    "description": "Join our platform to get started"
   },
   "SignUpForm": {
-    "first_name_label": "First name",
-    "first_name_placeholder": "Enter your first name",
-    "last_name_label": "Last name",
-    "last_name_placeholder": "Enter your last name",
-    "email_label": "Email",
-    "email_placeholder": "Enter your email",
-    "password_label": "Password",
-    "password_placeholder": "Enter your password",
-    "confirm_password_label": "Confirm password",
-    "confirm_password_placeholder": "Confirm your password"
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email address"
+    },
+    "username": {
+      "label": "Username",
+      "placeholder": "Enter your username"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter your password"
+    },
+    "confirmPassword": {
+      "label": "Confirm password",
+      "placeholder": "Confirm your password"
+    },
+    "agreements": "By signing up, you agree to our",
+    "termsAndPolicy": "Terms and Privacy Policy",
+    "accountExists": "Already have an account?",
+    "logIn": "Log in",
+    "signUp": "Sign Up"
+  },
+  "ConfirmEmailAlertDialog": {
+    "title": "Confirm Your Email",
+    "description": " Please verify your email address to activate your account. Check your inbox for a verification email. Thank you!",
+    "continue": "Continue"
+  },
+  "ErrorAlertDialog": {
+    "title": "Oops! Something went wrong!",
+    "continue": "Continue"
   }
 }

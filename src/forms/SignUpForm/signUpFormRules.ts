@@ -10,21 +10,9 @@ export type FormRules<T extends { [key: string]: any }> = Record<
   RegisterOptions<any, string>
 >;
 
-export const PASSOWRD_MIN_LENGTH = 6;
+export const PASSWORD_MIN_LENGTH = 6;
 
 const SIGNUP_FORM_RULES: FormRules<SignUpFormValues> = {
-  firstName: {
-    required: {
-      value: true,
-      message: ERROR_MESSAGES.required,
-    },
-  },
-  lastName: {
-    required: {
-      value: true,
-      message: ERROR_MESSAGES.required,
-    },
-  },
   email: {
     required: {
       value: true,
@@ -35,13 +23,19 @@ const SIGNUP_FORM_RULES: FormRules<SignUpFormValues> = {
       message: ERROR_MESSAGES.invalidEmail,
     },
   },
+  username: {
+    required: {
+      value: true,
+      message: ERROR_MESSAGES.required,
+    },
+  },
   password: {
     required: {
       value: true,
       message: ERROR_MESSAGES.required,
     },
     minLength: {
-      value: PASSOWRD_MIN_LENGTH,
+      value: PASSWORD_MIN_LENGTH,
       message: ERROR_MESSAGES.minLength,
     },
   },
@@ -51,7 +45,7 @@ const SIGNUP_FORM_RULES: FormRules<SignUpFormValues> = {
       message: ERROR_MESSAGES.required,
     },
     minLength: {
-      value: PASSOWRD_MIN_LENGTH,
+      value: PASSWORD_MIN_LENGTH,
       message: ERROR_MESSAGES.minLength,
     },
     validate: {

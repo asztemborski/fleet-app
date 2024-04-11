@@ -14,7 +14,7 @@ type RootLayoutProps = {
 };
 
 export const metadata: Metadata = {
-  title: "Welcome | Fleet",
+  title: "Welcome | Thrive",
   description: appDescription,
 };
 

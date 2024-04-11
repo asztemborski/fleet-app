@@ -15,7 +15,7 @@ export default function LandingPage() {
         <header className="flex flex-row w-full justify-between items-center mb-20">
           <nav className="flex flex-row space-x-5">
             <Link className="text-white" href="/">
-              Fleet
+              Thrive
             </Link>
             <Link className="text-white" href="/about">
               {t("about")}
@@ -35,9 +35,9 @@ export default function LandingPage() {
         </header>
         <div className="flex flex-row items-center justify-center px-10 space-x-4">
           <div className="w-full flex flex-col space-y-14 ">
-            <h1 className="text-6xl font-bold">{t("welcomeSection_header")}</h1>
+            <h1 className="text-6xl font-bold">{t("WelcomeSection.header")}</h1>
             <p className="text-xl font-medium">
-              {t("welcomeSection_description")}
+              {t("WelcomeSection.description")}
             </p>
             <div className="w-1/2">
               <Link href="/sign-up">
@@ -69,34 +69,34 @@ export default function LandingPage() {
         />
         <div className="w-1/2 flex flex-col space-y-14">
           <h2 className="text-6xl font-bold">
-            {t("descriptionSection_header")}
+            {t("DescriptionSection.header")}
           </h2>
           <p className="text-xl font-medium">
-            {t("descriptionSection_description")}
+            {t("DescriptionSection.description")}
           </p>
         </div>
       </section>
       <section className="landing-section snap-center ">
         <div className="landing-section flex flex-row m-0  justify-between h-[60vh]">
           <StatisticCard
-            header={t("statisticsSection_projectsCreated")}
+            header={t("StatisticsSection.projectsCreated")}
             value="102 Projects"
           />
           <StatisticCard
-            header={t("statisticsSection_applicationMembers")}
+            header={t("StatisticsSection.applicationMembers")}
             value="350 Members"
           />
           <StatisticCard
-            header={t("statisticsSection_tasksAssigned")}
+            header={t("StatisticsSection.tasksAssigned")}
             value="1022 Tasks"
           />
           <StatisticCard
-            header={t("statisticsSection_pageVisitors")}
+            header={t("StatisticsSection.pageVisitors")}
             value="700 Visitors"
           />
         </div>
         <footer className="landing-section h-[40vh] bg-black">
-          <h3 className="text-4xl font-semibold">{t("footer_title")}</h3>
+          <h3 className="text-4xl font-semibold">{t("Footer.title")}</h3>
         </footer>
       </section>
     </main>

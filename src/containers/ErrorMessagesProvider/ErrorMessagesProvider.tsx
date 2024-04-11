@@ -1,13 +1,13 @@
-import { NextIntlClientProvider, useMessages } from "next-intl";
 import { ReactNode } from "react";
 
 import { INPUT_ERROR_MESSAGES } from "@/constants/translations";
+import MessagesProvider from "@/containers/MessagesProvider";
 
 export const ERROR_MESSAGES = {
   required: "required",
-  minLength: "min_length",
-  passwordMatch: "password_match",
-  invalidEmail: "invalid_email",
+  minLength: "minLength",
+  passwordMatch: "passwordMatch",
+  invalidEmail: "invalidEmail",
 };
 
 type ErrorMessagesProviderProps = {
@@ -15,20 +15,10 @@ type ErrorMessagesProviderProps = {
 };
 
 const ErrorMessagesProvider = ({ children }: ErrorMessagesProviderProps) => {
-  const messages = useMessages();
-
-  const messagesKeys = Object.values(ERROR_MESSAGES);
-
-  const errorMessaegs = Object.fromEntries(
-    Object.entries(messages[INPUT_ERROR_MESSAGES]).filter(([key]) =>
-      messagesKeys.includes(key)
-    )
-  );
-
   return (
-    <NextIntlClientProvider messages={errorMessaegs}>
+    <MessagesProvider namespaces={[INPUT_ERROR_MESSAGES]}>
       {children}
-    </NextIntlClientProvider>
+    </MessagesProvider>
   );
 };
 
