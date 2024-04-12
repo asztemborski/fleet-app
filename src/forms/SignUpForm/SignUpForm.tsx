@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { Fragment, useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -21,6 +20,7 @@ import isApiError, {
   DEFAULT_ERROR_RESPONSE,
   ErrorResponse,
 } from "@/utilities/error";
+import { Link } from "@/utilities/navigation";
 import {
   IconAppWindowFilled,
   IconBrandGoogleFilled,
@@ -106,7 +106,7 @@ const SignUpForm = () => {
     fieldName: SignUpFormKeys,
     props?: { [key: string]: any }
   ) => {
-    if (!errors[fieldName]) return null;
+    if (!errors[fieldName]) return undefined;
 
     return inputErrorsTranslations(errors[fieldName]?.message, props);
   };
@@ -215,7 +215,7 @@ const SignUpForm = () => {
           </div>
           <span className="text-sm">
             {formTranslations("accountExists")}{" "}
-            <Link className="underline" href="/sign-in">
+            <Link className="underline" href="/auth/sign-in">
               {formTranslations("logIn")}
             </Link>
           </span>

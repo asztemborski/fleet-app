@@ -1,12 +1,14 @@
 import axios from "axios";
 
+import { API_URL } from "@/constants/common";
+
 const client = axios.create({
-  baseURL: "http://localhost:5160/",
+  baseURL: API_URL,
 });
 
 client.interceptors.response.use(undefined, ({ response }) => {
   const data = response.data;
-  if (data.StatusCode) {
+  if (data.statusCode) {
     return Promise.reject(data);
   }
 

@@ -30,9 +30,7 @@ const ErrorAlertDialog = ({
         <AlertDialogHeader>
           <AlertDialogTitle>{t("title")}</AlertDialogTitle>
           <AlertDialogDescription>
-            <div>
-              <p>{errorMessage}</p>
-            </div>
+            <p>{errorMessage}</p>
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

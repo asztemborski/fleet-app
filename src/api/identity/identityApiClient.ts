@@ -8,7 +8,7 @@ export type SignUpRequest = {
 };
 
 const signUpRequest = async (data: SignUpRequest) => {
-  return await client.post("identity/sign-up", data);
+  return await client.post("/identity/sign-up", data);
 };
 
 const requests = {

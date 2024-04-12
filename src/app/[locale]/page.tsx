@@ -24,7 +24,7 @@ export default function LandingPage() {
               {t("contact")}
             </Link>
           </nav>
-          <Link href="/sign-in">
+          <Link href="/auth/sign-in">
             <Button
               className="font-bold tracking-widest px-6 py-6 rounded-[5px] text-lg border"
               variant="secondary"
@@ -40,7 +40,7 @@ export default function LandingPage() {
               {t("WelcomeSection.description")}
             </p>
             <div className="w-1/2">
-              <Link href="/sign-up">
+              <Link href="/auth/sign-up">
                 <Button
                   variant="secondary"
                   className="py-8 px-28 text-2xl rounded-[5px] font-extrabold tracking-wider border"

@@ -75,5 +75,17 @@
   "ErrorAlertDialog": {
     "title": "Ups! Coś poszło nie tak!",
     "continue": "Kontynuuj"
+  },
+  "ConfrimEmailPage": {
+    "success": {
+      "title": "Twój adres e-mail został potwierdzony",
+      "description": "Możesz teraz zalogować się na swoje nowe konto",
+      "signIn": "Zaloguj się"
+    },
+    "error": {
+      "title": "Coś poszło nie tak!",
+      "description": "Wystąpił błąd podczas potwierdzania Twojego adresu e-mail",
+      "back": "Wstecz"
+    }
   }
 }

@@ -75,5 +75,17 @@
   "ErrorAlertDialog": {
     "title": "Oops! Something went wrong!",
     "continue": "Continue"
+  },
+  "ConfrimEmailPage": {
+    "success": {
+      "title": "Your email has been confirmed",
+      "description": "You can now sign in with your new account",
+      "signIn": "Sign in"
+    },
+    "error": {
+      "title": "Something went wrong!",
+      "description": "There was an error while confirming your email address",
+      "back": "Back"
+    }
   }
 }
